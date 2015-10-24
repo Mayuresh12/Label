@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblLabel;
+- (IBAction)SetLabelProperties:(id)sender;
 
 @end
 
@@ -24,4 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)SetLabelProperties:(id)sender {
+    _lblLabel.text=@"Mayuresh";
+    _lblLabel.textColor=[UIColor redColor];
+    _lblLabel.font=[UIFont fontWithName:@"Courier" size:24];
+}
 @end
+
